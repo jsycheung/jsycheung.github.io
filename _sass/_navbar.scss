@@ -9,6 +9,7 @@
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  z-index: 1100;
 }
 
 .navbar .dropdown-menu,
@@ -57,10 +58,12 @@
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-size: 2.5rem;
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-size: 1.3rem;
 
     &:hover {
       color: var(--global-hover-color);
@@ -186,5 +189,31 @@
 
   &:hover {
     color: var(--global-hover-color);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar.navbar-light .container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .navbar.navbar-light .navbar-brand.title {
+    display: inline-block;
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-right: 0.5rem;
+    font-size: 1.75rem;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-height: 1.15;
+    max-width: calc(100% - 3.25rem);
+  }
+
+  .navbar-toggler {
+    flex: 0 0 auto;
+    margin-left: auto;
   }
 }

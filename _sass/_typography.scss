@@ -134,3 +134,34 @@ blockquote {
     }
   }
 }
+
+h3 {
+  margin-top: 1.5rem; /* Add spacing before h3 */
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+/* Correcting .expertise-container alignment */
+.expertise-container {
+  display: inline-block;
+  width: 48%; /* Adjusted width to fit two columns */
+  vertical-align: top;
+  margin-right: 2%; /* Add spacing between columns */
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .expertise-container {
+    display: block;
+    width: 100%; /* Stack columns on smaller screens */
+    margin: 0 0 0 0;
+  }
+}
+
+/* Remove margin for the last column */
+.expertise-container:nth-child(2n) {
+  margin-right: 0;
+}
+

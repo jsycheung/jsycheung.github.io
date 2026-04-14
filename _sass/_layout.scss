@@ -24,6 +24,13 @@ body.fixed-top-nav {
   padding-top: 57px;
 }
 
+@media (max-width: 991.98px) {
+  body.fixed-top-nav {
+    // Mobile navbar can grow taller when the site title wraps to two lines.
+    padding-top: 96px;
+  }
+}
+
 body.sticky-bottom-footer {
   // Remove padding below footer.
   padding-bottom: 0;
@@ -31,6 +38,68 @@ body.sticky-bottom-footer {
 
 .container {
   max-width: v.$max-content-width;
+}
+
+.page-hero-image-wrapper {
+  width: 100vw;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  margin-left: calc(50% - 50vw);
+  height: calc(100vh - 57px);
+  height: calc(100dvh - 57px);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero-image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: hero-fade-in 900ms ease-out forwards;
+  z-index: 0;
+}
+
+.page-hero-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  text-align: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.page-hero-title {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.75rem, 4.5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  animation: hero-fade-in 900ms ease-out forwards;
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-hero-image {
+    animation: none;
+    opacity: 1;
+  }
 }
 
 // Profile
@@ -56,3 +125,10 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+/* Ensure long page titles can wrap naturally. */
+.post-title {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
