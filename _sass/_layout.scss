@@ -42,13 +42,21 @@ body.sticky-bottom-footer {
 
 .page-hero-image-wrapper {
   width: 100vw;
-  margin-top: -3rem;
+  margin-top: 0;
   margin-bottom: 2rem;
   margin-left: calc(50% - 50vw);
   height: calc(100vh - 57px);
   height: calc(100dvh - 57px);
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 991.98px) {
+  .page-hero-image-wrapper {
+    margin-top: 0;
+    height: calc(100vh - 96px);
+    height: calc(100dvh - 96px);
+  }
 }
 
 .page-hero-image {

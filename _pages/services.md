@@ -6,26 +6,18 @@ nav: true
 nav_order: 9
 hero_image: /assets/img/art_2.jpg
 hero_image_header: About My Services
-top_specialties: [Anxiety, Depression, Coping Skills]
-expertise: [ADHD, Autism, Bipolar Disorder, Body Image, Caregivers, Chronic Illness, Chronic Pain, Divorce, Emotional Disturbance, Family Conflict, Grief, LGBTQ+, Life Transitions, Mood Disorders, Open Relationships Non-Monogamy, Peer Relationships, Relationship Issues, School Issues, Self Esteem, Stress, Transgender, Women's Issues]
+expertise: [LGBTQIA+, Anxiety, Depression, Coping Skills, Autism, Bipolar Disorder, Body Image, Caregivers, Chronic Illness/ Pain, Divorce, Family Conflict, Grief, Life Transitions, Mood Disorders, Polyamory/ Non-Monogamy, Peer Relationships, Relationship Issues, School Issues, Self Esteem, Stress, Women's Issues]
 treatment_approach: [Art Therapy, Attachment-based, Cognitive Behavioral (CBT), Dance Movement Therapy, Eclectic, Emotionally Focused, Expressive Arts, Feminist, Humanistic, Mindfulness-Based (MBCT), Person-Centered, Relational, Somatic, Strength-Based, Trauma Focused]
 ---
-
-<h3>Top Specialties</h3>
-<div>
-<ul>
-{% for specialty in page.top_specialties %}
-<li>{{specialty}}</li>
-{% endfor %}
-</ul>
-</div>
-
-<h3>Expertise</h3>
+<h5>I offer both in-person and telehealth sessions. I work with adults in individual one-on-one therapy and utilize an eclectic approach that incorporates a mix of the following
+modalities based off your need and comfort level.</h5>
+<div style="height: 1.5rem;"></div>
+<h4>My areas of specialization:</h4>
 <div class="expertise-container">
   <ul>
     {% assign half_size = page.expertise.size | divided_by: 2.0 | ceil %}
     {% for exp in page.expertise limit: half_size %}
-    <li>{{exp}}</li>
+    <li>{{ exp }}</li>
     {% endfor %}
   </ul>
 </div>
@@ -33,21 +25,14 @@ treatment_approach: [Art Therapy, Attachment-based, Cognitive Behavioral (CBT), 
   <ul>
     {% assign half_size = page.expertise.size | divided_by: 2.0 | ceil %}
     {% for exp in page.expertise offset: half_size %}
-    <li>{{exp}}</li>
+    <li>{{ exp }}</li>
     {% endfor %}
   </ul>
 </div>
 
-<h3>Client Focus</h3>
-<div>
-<ul>
-  <li>Adults</li>
-  <li>Individual one-on-one therapy</li>
-  <li>Bisexual Allied, Gay Allied, Immuno-disorders, Lesbian Allied, Non-Binary Allied, Queer Allied, Transgender Allied</li>
-</ul>
-</div>
+<div style="height: 1.5rem;"></div>
 
-<h3>Treatment Approach</h3>
+<h4>Treatment modalities:</h4>
 <div class="expertise-container">
   <ul>
     {% assign half_size = page.treatment_approach.size | divided_by: 2.0 | ceil %}
@@ -65,11 +50,3 @@ treatment_approach: [Art Therapy, Attachment-based, Cognitive Behavioral (CBT), 
   </ul>
 </div>
 
-<h3>Qualifications</h3>
-<div>
-<ul>
-  <li>Attended Lesley University</li>
-  <li>Certificate from American Dance/ Movement Therapy Association (BC-DMT-1291 / 2015)</li>
-  <li>Licensed by State of Massachusetts / 10238</li>
-</ul>
-</div>

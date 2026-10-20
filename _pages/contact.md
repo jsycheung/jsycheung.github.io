@@ -4,8 +4,16 @@ title: Contact
 permalink: /contact/
 nav: true
 nav_order: 11
+_styles: |
+  .post-title {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
 ---
-I am available both in-person and online.
+When reaching out please provide if interested in virtual or
+in-person visits, if you are planning to use insurance and which
+one you have if so, and when you would be available to meet.
 
 I am reachable by email or phone.
 <br>

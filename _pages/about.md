@@ -32,4 +32,6 @@ I believe that healing occurs within the therapeutic relationship and I aim to c
 
 I specialize in depression, anxiety, emotional regulation, stress management, grief/ loss, LGTBQIA+, self-esteem issues, trauma, and interpersonal issues.
 
+I graduated from Lesley University in 2013. I became licensed by the State of Massachusetts and certified by the American Dance/ Movement Therapy Association in 2015.
+
 I currently provide individual therapy and am open to treating a variety of emotional and behavioral needs.
